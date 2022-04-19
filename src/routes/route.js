@@ -4,28 +4,31 @@ const  {route } = require( 'express/lib/application' );
 
 
 
-const authorController = require('../controller/authorController')
-//require controller
+const batchController = require('../controller/batchController')
 
-const publisherController = require('../controller/publisherController')
 
-const bookController = require('../controller/bookController')
+const developerController = require('../controller/developerController')
 
 
 
-router.post('/createnewAuthor',authorController.createnewAuthor)
 
 
-router.post('/createnewPublisher',publisherController.createnewPublisher) // lets create new publisher
+
+router.post('/createbatch',batchController.createBatch)       //similarly for creating developer 
 
 
-router.post('/createnewBooks',bookController.createnewBooks)
 
-router.get('/fetchBooks',bookController.fetchBooks)
 
-router.get('/updateBooks',bookController.updateBooks)
+router.post('/createdeveloper',developerController.createDeveloper) 
 
-// in creating new books we use objectids of author and publisher
+
+router.get('/fetchDetails',developerController.fetchDetails)
+
+
+
+// we need batch id so in compass
+
+//now according to assignment we need get api from
 
 
 

@@ -7,7 +7,7 @@ const route = require('./routes/route');
 const  mongoose= require('mongoose')
 
 
-mongoose.connect("mongodb+srv://sushantkb:TM8BFATdO1usEQ5Q@cluster0.ubaqb.mongodb.net/bookschema3?retryWrites=true&w=majority",{useNewUrlParser: true})
+mongoose.connect("mongodb+srv://sushantkb:TM8BFATdO1usEQ5Q@cluster0.ubaqb.mongodb.net/batchdevelop?retryWrites=true&w=majority",{useNewUrlParser: true})
 .then(()=>
 console.log("mongoDb is connected"))
 .catch( err =>  console.log(err))

@@ -1,4 +1,4 @@
-
+/*
 const mongoose = require('mongoose')
 
 const ObjectId = mongoose.Schema.Types.ObjectId
@@ -25,3 +25,4 @@ default: false
 
 module.exports =mongoose.model('book1',bookSchema);
 
+*/

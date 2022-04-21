@@ -1,3 +1,5 @@
+
+/*
 let player = function(req,res){
 
     let y = req.params.index
@@ -43,3 +45,5 @@ res.send({data:players , status :true})
     module.exports.player =player
 
     //now we have to export in route.js
+
+    */

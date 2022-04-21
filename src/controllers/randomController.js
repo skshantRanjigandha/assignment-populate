@@ -1,3 +1,5 @@
+/*
+
 let addToArray= function (req, res) {
     let x= req.body.number
     console.log(x)
@@ -9,3 +11,5 @@ let addToArray= function (req, res) {
 }
 
 module.exports.addToArray= addToArray
+
+*/

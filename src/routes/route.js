@@ -1,23 +1,32 @@
 const express = require('express');
 const router = express.Router();
 
-const authorController = require('../controller/authorController')
-const publisherController = require('../controller/publisherController')
-const bookController = require('../controller/bookController');
-
-const { route } = require('express/lib/application');
+const userController = require('../controller/userController')
 
 
 
 
-router.post('/createnewAuthor',authorController.createnewAuthor)
+router.post('/userss',userController.createUser)
 
-router.post('/newPublisher',publisherController.createnewPublisher)  
+
+
+router.post('/login',userController.loginUser)  
+
+
+router.get('/userss/:userId',userController.getUserdata)
+
+
+
+module.exports = router;
+
+
+
+
+
 
 //router.post('/createnewBooks',bookController.createnewBooks)  
 
 
-//router.get('/fetchBooks',bookController.fetchBooks)
 
 
 //router.put('/updatebooks',bookController.updateBooks)
@@ -27,7 +36,6 @@ router.post('/newPublisher',publisherController.createnewPublisher)
 
 
 
-module.exports = router;
 
 
 

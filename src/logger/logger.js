@@ -1,3 +1,5 @@
+
+/*
 let welcome = function(){
 
 
@@ -6,3 +8,5 @@ console.log('welcome to my application i am sushant and a partt of functionup ur
 }
 
 module.exports.welcomeMsg = welcome;
+
+*/

@@ -1,6 +1,6 @@
 /*
 const newbookModel = require('../models/newbookModel.js')
-const newpublisherModel = require('../models/newpublisherModel.js')
+const newpublisherModel = require('../models/userModel.js')
 const newauthorModel = require('../models/newauthorModel')
 
 
@@ -91,4 +91,5 @@ const updateBooks = async function (req, res) {          //update hard cover to 
     module.exports.fetchBooks = fetchBooks
 
     module.exports.updateBooks = updateBooks
-*/
+
+    */

@@ -1,6 +1,6 @@
+/*
 
-
-const newpublisherModel = require('../models/newpublisherModel.js')
+const newpublisherModel = require('../models/userModel.js')
 
 
 const createnewPublisher = async function (req, res) {
@@ -12,4 +12,4 @@ const createnewPublisher = async function (req, res) {
   }
 
     module.exports.createnewPublisher = createnewPublisher
-   
+   */

@@ -4,9 +4,17 @@ const router = express.Router();
 const userController = require('../controller/userController')
 
 
+const cowinController = require('../controller/cowinController')
 
+router.get('/cowin/states',cowinController.getStates)
 
-router.post('/userss',userController.createUser)
+router.get('/cowin/districtInstates/:state_id',cowinController.getDistricts)
+
+router.get('/cowin/getBypin',cowinController.getBypin)
+
+router.post('/cowin/getoTp',cowinController.getoTp)
+
+router.get('/userss',userController.createUser)
 
 
 
@@ -15,7 +23,7 @@ router.post('/login',userController.loginUser)
 
 router.get('/userss/:userId',userController.getUserdata)
 
-
+router.put('/userss/:userId',userController.updateUser)
 
 module.exports = router;
 
